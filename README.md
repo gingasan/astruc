@@ -19,16 +19,16 @@ Graph:
 
 ```mermaid
 graph TD
-    func(relu) --> arg(arguments)
-    func --> if(If) --> return1(Return)
-    arg --> x1(x)
+    funcdef(relu) --> arg(arguments)
+    funcdef --> if(If) --> return1(Return)
+    arg --> name1(x)
     if --> return2(Return)
     if --> compare(Compare)
-    compare --> x2(x)
-    compare --> gt(Gt)
-    compare --> n1(0)
-    return1 --> n2(1)
-    return2 --> n3(0)
+    compare --> name2(x)
+    compare --> op(Gt)
+    compare --> num1(0)
+    return1 --> num2(1)
+    return2 --> num3(0)
 ```
 
 
